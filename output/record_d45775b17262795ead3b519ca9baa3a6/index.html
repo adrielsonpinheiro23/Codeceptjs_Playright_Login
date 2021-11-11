@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recorder Result</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        .carousel,
+        .item,
+        .active {
+            height: 100%;
+        }
+        .navbar {
+            margin-bottom: 0px !important;
+        }
+        .carousel-caption {
+            background: rgba(0,0,0,0.8);
+            padding-bottom: 50px !important;
+        }
+        .carousel-caption.error {
+            background: #c0392b !important;
+        }
+
+        .carousel-inner {
+            height: 100%;
+        }
+
+        .fill {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            overflow-y: scroll;
+            background-position: top;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="../records.html">
+                &laquo;
+                Create User
+                <small>Login with success</small>
+            </a>
+        </div>
+    </nav>
+    <header id="steps" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            
+<li data-target="#steps" data-slide-to="0" class="active"></li>
+
+<li data-target="#steps" data-slide-to="1" ></li>
+
+<li data-target="#steps" data-slide-to="2" ></li>
+
+<li data-target="#steps" data-slide-to="3" ></li>
+
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            
+<div class="item active">
+    <div class="fill">
+        <img src="0000.png">
+    </div>
+    <div class="carousel-caption ">
+        <h2>I am on page "/"</h2>
+        <small>scroll up and down to see the full page</small>
+    </div>
+</div>
+
+<div class="item ">
+    <div class="fill">
+        <img src="0001.png">
+    </div>
+    <div class="carousel-caption ">
+        <h2>I set cookie [{"sameSite":"Lax","name":"PrestaShop-a30a9934ef476d11b6cc3c983616e364","value":"GGw7oXk6lLB9Dmi5C9Ri7z22ZpDoiub%2FbPRXXdGp2bUgGaLNRZ7%2Ff4rZ3AdT8TaSP2PEE6u24UPfaNBmE4Fo2pLv2L6HEqGWBexV0QppLlN%2BWD0DzDd5WwPeZPmf8%2FU3Lil6uvoo4ap3aglcXVW%2F50cAtiOMWdoNAM03DAsg0cbhG51ws%2FEZyzidJnUbIFNjgAx%2FNbqGhd5ilFpv43B%2FKU3SYeqaNshNjUFyK%2FRK7ORVfXyYBN%2Bvdgnew2HIt%2BsROLBjOTjJXRGp%2By69duBMLTTq4sPQ02nEnGhNuPb6uFmP4hvaEdePIdHSg5D5NPNPR3p3sTMtm6JAtAleb4lDjFkzOn0JSngPDWOsaObGX2v6luy1ys9QuU6nmKE0sBkiflN116j9UcLcIweoLb6lEOr1yb7g0h5VuxSMGMPYTE1Y2hlbFO2sU9%2Bdeh9cXRsV000322","domain":".automationpractice.com","path":"/","expires":1638208485.565133,"httpOnly":true,"secure":false}]</h2>
+        <small>scroll up and down to see the full page</small>
+    </div>
+</div>
+
+<div class="item ">
+    <div class="fill">
+        <img src="0002.png">
+    </div>
+    <div class="carousel-caption ">
+        <h2>I am on page "/"</h2>
+        <small>scroll up and down to see the full page</small>
+    </div>
+</div>
+
+<div class="item ">
+    <div class="fill">
+        <img src="0003.png">
+    </div>
+    <div class="carousel-caption ">
+        <h2>I see "Adrielson Pinheiro"</h2>
+        <small>scroll up and down to see the full page</small>
+    </div>
+</div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#steps" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#steps" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        wrap: true,
+        interval: false
+    })
+
+    $(document).bind('keyup', function(e) {
+      if(e.keyCode==39){
+      jQuery('a.carousel-control.right').trigger('click');
+      }
+
+      else if(e.keyCode==37){
+      jQuery('a.carousel-control.left').trigger('click');
+      }
+
+    });
+
+    </script>
+
+</body>
+
+</html>
